@@ -1,0 +1,11 @@
+---
+title: "p8105_hw1_rh2916"
+author: "Rui Huang"
+date: "September 19, 2018"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+```
+
+
