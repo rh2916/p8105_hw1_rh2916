@@ -75,6 +75,27 @@ The size of the dataset is `r dim(problem2_df)[1]`
 The mean of x is `r mean(problem2_df$x)` and median of c is `r median(problem2_df$x)`
 The proportion of cases for which the logical vector is TRUE is `r sum(problem2_df$vector_logical)/dim(problem2_df)[1]`
 
+## Make a scatterplot
+
+```{r}
+ggplot(problem2_df, aes(x = x, y = y, color = vector_logical)) + geom_point() + ggtitle("Scatterplot for logical variable")
+
+ggplot(problem2_df, aes(x = x, y = y, color = vector_numeric)) + geom_point() + ggtitle("Scatterplot for numeric variable")
+
+ggplot(problem2_df, aes(x = x, y = y, color = vector_factor)) + geom_point() + ggtitle("Scatterplot for factor variable")
+
+```
+
+## comment on the color scales 
+For logical and factor variables, red points represent "FALSE" and green points represent "TRUE". 
+For numeric variables, the gradient from blue to black represents numeric from 0 to 1.
+
+## Export the first scatterplot
+
+```{r}
+ggsave(file = "Scatterplot for logical variable.pdf", path = NULL)
+```
+
 
 
 
