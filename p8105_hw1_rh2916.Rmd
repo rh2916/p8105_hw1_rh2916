@@ -22,4 +22,13 @@ problem1_df = tibble(
 )
 ```
 
+## Mean of each variable
+```{r}
+mean(problem1_df$vec_numeric)
+mean(problem1_df$vec_logical)
+mean(problem1_df$vec_char)
+mean(problem1_df$vec_factor)
+```
+
+
 
